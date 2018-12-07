@@ -13,7 +13,7 @@ public class Verlet {
 
     public void integrate(CalculateAcceleration calculateAcceleration, double ts, double te, double x0, double v0) {
 
- ode = new ODE();
+        ode = new ODE();
         double t = ts;
         double x = x0;
         double v = v0;
@@ -38,7 +38,7 @@ public class Verlet {
         int l = ode.gettValues().size();
 
         for (int i = 0; i < l; i++)
-            energy.add(0.5 * ode.getvValues().get(i) - Math.cos(ode.getxValues().get(i)));
+            energy.add(0.5 *Math.pow(ode.getvValues().get(i),2)  - Math.cos(ode.getxValues().get(i)));
 
         return energy;
     }
@@ -49,7 +49,7 @@ public class Verlet {
         try {
             save = new PrintWriter(filename);
 
-            String s="";
+            String s = "";
             int l = ode.gettValues().size();
 
             for (int i = 0; i < l; i++) {
@@ -59,7 +59,7 @@ public class Verlet {
                 String v = ode.getvValues().get(i).toString().replace(".", ",");
                 String e = countEnergy().get(i).toString().replace(".", ",");
 
-                s=t + ";" + x + ";" + v + ";" + e;
+                s = t + ";" + x + ";" + v + ";" + e;
 
                 save.println(String.valueOf(s));
             }
@@ -72,14 +72,12 @@ public class Verlet {
 
     public static void main(String[] args) {
 
-        Verlet verlet = new Verlet(0.01);
+        Verlet verlet = new Verlet(1);
         Acceleration acceleration = new Acceleration();
 
-        verlet.integrate(acceleration, 0, 10, 10, 0);
+        verlet.integrate(acceleration, 0, 10, 0.1, 0);
         verlet.saveToFile("dane.txt");
 
-
-        String dupa ="dupa";
 
     }
 
