@@ -72,7 +72,7 @@ public class Verlet {
 
     public static void main(String[] args) {
 
-        Verlet verlet = new Verlet(1);
+        Verlet verlet = new Verlet(0.01);
         Acceleration acceleration = new Acceleration();
 
         verlet.integrate(acceleration, 0, 10, 0.1, 0);
