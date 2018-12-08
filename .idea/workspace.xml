@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21e8d4bc-2962-4132-b523-911d37a9d086" name="Default Changelist" comment="" />
+    <list default="true" id="21e8d4bc-2962-4132-b523-911d37a9d086" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Analyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VerletIntegrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dane.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab8/ODE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab8/Verlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Acceleration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pendulum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ODE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Verlet.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,28 +131,75 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="743800372">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="dane" value="4" />
+          <entry key="java" value="3" />
+          <entry key="txt" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="3" />
+          <entry key="PLAIN_TEXT" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="26" />
+          <entry key="java" value="782" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="782" />
+          <entry key="PLAIN_TEXT" value="26" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Verlet.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/VerletIntegrator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="74" column="35" lean-forward="true" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+            <state relative-caret-position="85">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#171#172#0" expanded="true" />
-                <element signature="e#199#200#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pendulum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+              <folding>
+                <element signature="e#105#106#0" expanded="true" />
+                <element signature="e#140#141#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dane.txt">
+        <entry file="file://$PROJECT_DIR$/data.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="8738">
+              <caret line="514" column="7" lean-forward="true" selection-start-line="514" selection-start-column="7" selection-end-line="514" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -157,26 +214,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Acceleration.java">
+        <entry file="file://$PROJECT_DIR$/src/Analyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
               <folding>
-                <element signature="e#105#106#0" expanded="true" />
-                <element signature="e#140#141#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ODE.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-              <folding>
-                <element signature="e#290#291#0" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#291#292#0" expanded="true" />
+                <element signature="e#321#322#0" expanded="true" />
                 <element signature="e#365#366#0" expanded="true" />
                 <element signature="e#395#396#0" expanded="true" />
                 <element signature="e#440#441#0" expanded="true" />
@@ -204,11 +248,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/CalculateAcceleration.java" />
         <option value="$PROJECT_DIR$/src/ODEUpdate.java" />
-        <option value="$PROJECT_DIR$/src/ODE.java" />
         <option value="$PROJECT_DIR$/src/Acceleration.java" />
         <option value="$PROJECT_DIR$/src/dane" />
         <option value="$PROJECT_DIR$/dane.txt" />
         <option value="$PROJECT_DIR$/src/Verlet.java" />
+        <option value="$PROJECT_DIR$/src/ODE.java" />
+        <option value="$PROJECT_DIR$/src/VerletPath.java" />
+        <option value="$PROJECT_DIR$/src/Analyzer.java" />
+        <option value="$PROJECT_DIR$/src/Pendulum.java" />
+        <option value="$PROJECT_DIR$/src/VerletIntegrator.java" />
+        <option value="$PROJECT_DIR$/src/tester.java" />
       </list>
     </option>
   </component>
@@ -218,11 +267,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="148" />
-    <option name="y" value="-9" />
-    <option name="width" value="975" />
-    <option name="height" value="1049" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1905" />
+    <option name="width" value="1948" />
+    <option name="height" value="2075" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -230,30 +278,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Lab8MetNum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab8MetNum" type="462c0819:PsiDirectoryNode" />
+              <item name="LLab8MetNum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LLab8MetNum" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Lab8MetNum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab8MetNum" type="462c0819:PsiDirectoryNode" />
+              <item name="LLab8MetNum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LLab8MetNum" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544195992820" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544282258950" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -270,17 +318,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Verlet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Verlet" />
+  <component name="RunManager" selected="Application.tester">
+    <configuration name="VerletIntegrator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="VerletIntegrator" />
       <module name="Lab8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tester" />
+      <module name="Lab8" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.VerletIntegrator" />
+      <item itemvalue="Application.tester" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Verlet" />
+        <item itemvalue="Application.tester" />
+        <item itemvalue="Application.VerletIntegrator" />
       </list>
     </recent_temporary>
   </component>
@@ -301,13 +361,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18542000" />
+    <option name="totallyTimeSpent" value="26637000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12416107" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15224682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -315,9 +375,9 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16105418" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4234621" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -325,7 +385,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
       <window_info anchor="right" id="Palette" order="2" />
@@ -348,29 +408,26 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/x=0" />
+    <entry file="file://$PROJECT_DIR$/x=0.txt" />
+    <entry file="file://$PROJECT_DIR$/Lab8.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/LIsta8MEtody/src/VerletIntegrator.java" />
+    <entry file="file://$PROJECT_DIR$/src/dane">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dane.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CalculateAcceleration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dane">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x=0">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x=0.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lab8.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/LIsta8MEtody/src/VerletIntegrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -381,7 +438,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acceleration.java">
+    <entry file="file://$PROJECT_DIR$/data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8738">
+          <caret line="514" column="7" lean-forward="true" selection-start-line="514" selection-start-column="7" selection-end-line="514" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wyniki.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Analyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pendulum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
@@ -392,37 +474,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ODE.java">
+    <entry file="file://$PROJECT_DIR$/src/VerletIntegrator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dane.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Verlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="74" column="35" lean-forward="true" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+        <state relative-caret-position="85">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
         </state>
       </provider>
     </entry>
