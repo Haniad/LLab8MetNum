@@ -1,3 +1,2 @@
 public interface CalculateAcceleration {
-    double a (double x);
-}
+    double a (double x);}

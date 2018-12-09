@@ -7,22 +7,18 @@ public class ODE implements ODEUpdate {
     private ArrayList<Double> vValues = new ArrayList<>();
 
     public ArrayList<Double> gettValues() {
-        return tValues;
-    }
+        return tValues; }
 
     public ArrayList<Double> getxValues() {
-        return xValues;
-    }
+        return xValues; }
 
     public ArrayList<Double> getvValues() {
-        return vValues;
-    }
+        return vValues; }
 
     @Override
     public void update(double t, double x, double v) {
         tValues.add(t);
         xValues.add(x);
         vValues.add(v);
-
     }
 }

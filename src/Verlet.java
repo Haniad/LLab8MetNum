@@ -8,8 +8,7 @@ public class Verlet {
     private ODE ode;
 
     public Verlet(double dt) {
-        this.dt = dt;
-    }
+        this.dt = dt; }
 
     public void integrate(CalculateAcceleration calculateAcceleration, double ts, double te, double x0, double v0) {
 
@@ -38,7 +37,7 @@ public class Verlet {
         int l = ode.gettValues().size();
 
         for (int i = 0; i < l; i++)
-            energy.add(0.5 *Math.pow(ode.getvValues().get(i),2)  - Math.cos(ode.getxValues().get(i)));
+            energy.add(0.5 * Math.pow(ode.getvValues().get(i), 2) - Math.cos(ode.getxValues().get(i)));
 
         return energy;
     }
@@ -60,8 +59,7 @@ public class Verlet {
                 String e = countEnergy().get(i).toString().replace(".", ",");
 
                 s = t + ";" + x + ";" + v + ";" + e;
-
-                save.println(String.valueOf(s));
+                save.println(s);
             }
             save.close();
 
@@ -70,16 +68,54 @@ public class Verlet {
         }
     }
 
+
+    public void savePeriodToFile(String filename, ArrayList<Double> x0, ArrayList<Double> period) {
+
+        PrintWriter save = null;
+        try {
+            save = new PrintWriter(filename);
+            String s = "";
+
+            for (int i = 0; i < x0.size(); i++) {
+                s = x0.get(i).toString().replace(".", ",") + ";"
+                        + period.get(i).toString().replace(".", ",");
+                save.println(s);
+            }
+            save.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public double getPeriod() {
+        ArrayList<Double> period = new ArrayList<>();
+        ArrayList<Double> x = ode.getxValues();
+
+        for (int i = 1; i < x.size() - 1; i++) {
+            if (x.get(i + 1) < x.get(i) && x.get(i - 1) < x.get(i))
+                period.add(ode.gettValues().get(i)); }
+
+        return period.get(0) - ode.gettValues().get(0);
+    }
+
     public static void main(String[] args) {
 
         Verlet verlet = new Verlet(0.01);
         Acceleration acceleration = new Acceleration();
 
-        verlet.integrate(acceleration, 0, 10, 0.1, 0);
+        verlet.integrate(acceleration, 0, 10, 3, 0);
         verlet.saveToFile("dane.txt");
 
+        Verlet v = new Verlet(0.01);
+        ArrayList<Double> period = new ArrayList<>();
+        ArrayList<Double> x0 = new ArrayList<>();
 
+        for (double i = 0.1; i <= 100; i += 0.1) {
+            v.integrate(acceleration, 0, 100, i, 0);
+            x0.add(i);
+            period.add(v.getPeriod());
+        }
+        v.savePeriodToFile("period.txt", x0, period);
     }
-
-
 } //koniec klasy

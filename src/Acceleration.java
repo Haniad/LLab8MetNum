@@ -3,5 +3,4 @@ public class Acceleration implements CalculateAcceleration {
     public double a(double x) {
         return -Math.sin(x);
     }
-
 }
